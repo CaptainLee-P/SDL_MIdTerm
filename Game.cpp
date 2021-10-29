@@ -1,8 +1,5 @@
 #include "Game.h"
-/*
-SDL_Texture* m_pTexture;
-SDL_Rect m_sourceRectangle;
-SDL_Rect m_destinationRectangle;*/
+
 bool Game::init(const char* title,int xpos,int ypos, int height, int width, int flags)
 {
 if (SDL_Init(SDL_INIT_EVERYTHING) >= 0) {
@@ -27,10 +24,14 @@ if (SDL_Init(SDL_INIT_EVERYTHING) >= 0) {
     SDL_FreeSurface(pTempSurface);
 
     SDL_QueryTexture(m_pTexture, NULL,NULL,&m_sourceRectangle.w,&m_sourceRectangle.h);
+    m_sourceRectangle.x=0;
+    m_sourceRectangle.y=0;
+    m_sourceRectangle.w=50;
+    m_sourceRectangle.h=50;
     m_destinationRectangle.w=m_sourceRectangle.w;
     m_destinationRectangle.h=m_sourceRectangle.h;
-    m_destinationRectangle.x=m_sourceRectangle.x=0;
-    m_destinationRectangle.y=m_sourceRectangle.y=0;
+    m_destinationRectangle.x=0;
+    m_destinationRectangle.y=0;
     m_bRunning =true; 
     return true;
 }
