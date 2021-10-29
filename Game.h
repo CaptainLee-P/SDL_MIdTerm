@@ -3,7 +3,6 @@
 #include "SDL.h"
 #include "TextureManager.h"
 #include "GameObject.h"
-#include "Player.h"
 #include <vector>
 class Game{
 public:
