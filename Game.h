@@ -4,6 +4,7 @@
 #include "TextureManager.h"
 #include "GameObject.h"
 #include "Player.h"
+#include <vector>
 class Game{
 public:
   Game(){}
@@ -19,8 +20,7 @@ private:
 SDL_Window* m_pWindow = 0;
 SDL_Renderer* m_pRenderer = 0;
 bool m_bRunning;
+std::vector<GameObject*> m_gameObjects;
 
-GameObject m_go;
-Player m_player;
 };
 #endif
