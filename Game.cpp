@@ -30,8 +30,8 @@ if (SDL_Init(SDL_INIT_EVERYTHING) >= 0) {
     m_sourceRectangle.h=50;
     m_destinationRectangle.w=m_sourceRectangle.w;
     m_destinationRectangle.h=m_sourceRectangle.h;
-    m_destinationRectangle.x=0;
-    m_destinationRectangle.y=0;
+    m_destinationRectangle.x=100;
+    m_destinationRectangle.y=100;
     m_bRunning =true; 
     return true;
 }
