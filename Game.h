@@ -18,7 +18,6 @@ SDL_Window* m_pWindow = 0;
 SDL_Renderer* m_pRenderer = 0;
 bool m_bRunning;
 
-TextureManager m_textureManager;
 int m_currentFrame;
 };
 #endif
