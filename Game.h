@@ -1,7 +1,7 @@
 #ifndef _GAME_
 #define _GAME_
 #include "SDL.h"
-
+#include "TextureManager.h"
 class Game{
 public:
   Game(){}
@@ -18,8 +18,7 @@ SDL_Window* m_pWindow = 0;
 SDL_Renderer* m_pRenderer = 0;
 bool m_bRunning;
 
-SDL_Texture* m_pTexture;
-SDL_Rect m_sourceRectangle;
-SDL_Rect m_destinationRectangle;
+TextureManager m_textureManager;
+int m_currentFrame;
 };
 #endif
